@@ -1,11 +1,14 @@
 import React from "react";
 
 import Link from "next/link";
+import Head from "next/head";
 
-export default () => (
+// import withAnalitics from "../hocs/withAnalitics";
+
+const Home = () => (
   <>
     <Head>
-      <Title>Home</Title>
+      <title>Home</title>
     </Head>
 
     <h1>Hello world</h1>
@@ -14,3 +17,6 @@ export default () => (
     </Link>
   </>
 );
+
+// export default withAnalitics()(Home);
+export default Home;
